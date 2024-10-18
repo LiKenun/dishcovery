@@ -3,8 +3,8 @@
 import pandas as pd
 import re
 
-df1 = pd.read_csv('data/recipes_ingredients.csv.xz')
-df2 = pd.read_csv('data/recipes.csv.xz')
+df1 = pd.read_csv('Datasets/recipes_ingredients.csv.xz')
+df2 = pd.read_csv('Datasets/recipes.csv.xz')
 
 # Remove double spaces in columns
 df1['name'] = df1['name'].str.replace(r'\s{2,}', ' ', regex = True)
